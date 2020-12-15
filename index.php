@@ -26,7 +26,7 @@
 	     <div class="px-8 py-12">
     	     <div> 
     <div >
-    	<img class="flex flex-wrap content-center mx-auto" src="https://i.ibb.co/3cgk37y/ic-launcher.png" width="180" alt="ic-launcher">
+    	<img class="flip-in-hor-bottom flex flex-wrap content-center mx-auto" src="https://i.ibb.co/3cgk37y/ic-launcher.png" width="180" alt="ic-launcher">
     </div>
 <form action="result.php" enctype="multipart/form-data" method="post">
  <div class="bg-gray-900 border-4 border-purple-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
