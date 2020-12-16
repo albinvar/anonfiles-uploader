@@ -75,8 +75,8 @@ switch ($errorCode) {
     <meta name="theme-color" content="#000000" />
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
-    <meta name="og:title" property="og:title" content="QR Code Generator">
-    <meta name="description" content="Simple QR code generator created using php.">
+    <meta name="og:title" property="og:title" content="Anon File Uploader">
+    <meta name="description" content="Simple PHP file uploader using Anon Files Api">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="/site.webmanifest">
     <script src="script.js"></script>
@@ -85,7 +85,7 @@ switch ($errorCode) {
     	<div class="w-full max-w">
   <div class="flex items-center border-b border-teal-500 py-2 ">
     <div class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none font-bold text-xl">Anon File Uploader</div>
-    <a href="mailto:albinmelazhakathu@gmail.com"><button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
+    <a href="https://t.me/albinvar"><button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">
       Contact
     </button></a>
     <a href="https://github.com/albinvar/simple-qr-generator.git"><button class="flex-shrink-0 bg-gray-700 hover:bg-gray-600 border-teal-500 hover:border-teal-700 text-sm text-white text-sm py-1 px-2 rounded-full mx-3 heartbeat" type="button">
