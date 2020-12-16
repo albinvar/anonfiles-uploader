@@ -4,7 +4,7 @@ require __DIR__.'/vendor/autoload.php';
 
 use App\Uploader;
 
-//$token = "Your API Token";
+$token = (empty(getenv('token'))) ? null : getenv('token') ;
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {

@@ -8,7 +8,7 @@ class Uploader
 	protected $url;
 	protected $json;
 	
-	public function __construct($api)
+	public function __construct($api=null)
 	{
 		$this->setApi($api);
 	}
