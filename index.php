@@ -30,7 +30,7 @@
     </div>
 <form action="process.php" enctype="multipart/form-data" method="post">
  <div class="bg-gray-900 border-4 border-purple-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-      <h2 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white">AnonFile Uploader</h2>
+      <h2 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white">Anon File Uploader</h2>
       <div class="relative mb-4">
         <label for="file" class="leading-7 text-sm text-gray-600">Upload your file</label>
         <input type="file" id="file" name="file" placeholder="Type your text here" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-3" required>

@@ -6,18 +6,59 @@ use App\Uploader;
 
 //$token = "Your API Token";
 
-
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
 
 $uploader = new Uploader($token);
 $result = $uploader->decodeJson();
-if ($result->status == 1)
+$bool = (empty($result->status)) ? 0 : $result->status ;
+$status = ($bool) ? "<b class='text-green-400'> Success</b>" : "<b class='text-red-600 font-lg'> Error</b>";
+
+if ($bool)
 {
-$status = ($result->status == 1 ) ? "<b class='text-green-400'> Success</b>" : "<b class='text-red-600 font-lg'> Error</b>";
 $filename = $result->data->file->metadata->name;
 $filesize = $result->data->file->metadata->size->readable;
-} elseif($result->status == 0) {
+} else {
+$errorCode = (empty($result->error->code)) ? 0 : $result->error->code ;
+
+switch ($errorCode) {
+  case "0":
+    $error = "Authentication with API failed or Server error";
+    break;
+  case "10":
+    $error = "File not provided";
+    break;
+  case "11":
+    $error = "File is empty";
+    break;
+  case "12":
+    $error = "File is invalid";
+    break;
+  case "20":
+    $error = "Maximum upload per hour reached";
+    break;
+  case "21":
+    $error = "Maximum upload per day reached";
+    break;
+  case "22":
+    $error = "Maximum bandwidth per hour reached";
+    break;
+  case "23":
+    $error = "Maximum bandwidth per day reached";
+    break;
+  case "30":
+    $error = "File Type isn't allowed";
+    break;
+  case "31":
+    $error = "Maximum size for file exceeded";
+    break;
+  case "32":
+    $error = "The file was banned from server";
+    break;
+  case "40":
+    $error = "Server failed to upload your file";
+    break;
+}
 
 }
 
@@ -34,6 +75,7 @@ $filesize = $result->data->file->metadata->size->readable;
     <meta name="description" content="Simple QR code generator created using php.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="script.js"></script>
     </head>
     <body class="bg-gray-900">
     	<div class="w-full max-w">
@@ -53,6 +95,8 @@ $filesize = $result->data->file->metadata->size->readable;
     <div >
     <!--<img class="flip-in-hor-bottom flex flex-wrap content-center mx-auto" src="https://i.ibb.co/3cgk37y/ic-launcher.png" width="180" alt="ic-launcher">-->
     </div>
+   <?php 
+  if($bool) { ?>
  <div class="bg-gray-900 border-4 border-purple-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
       <h1 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white"><?= $status ?></h1>
       <div class="relative mb-4">
@@ -64,7 +108,18 @@ $filesize = $result->data->file->metadata->size->readable;
       <button name ="submit" class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-md mt-3 bounce-bottom">Copy to clipboard</button>
       <p class="text-xs text-center text-gray-500 mt-3">Please use low size files for uploading. Thank you ☺️</p>
     </div></div>
-    
+    <?php } else { ?>
+     <div class="bg-gray-900 border-4 border-purple-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+      <h1 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white"><?= $status ?></h1>
+      <div class="relative mb-4">
+        <p class="text-white text-center mb-2">Oops, uploading failed due to <strong><?= $error; ?></strong></p>
+        
+      </div>
+      
+      <button class="text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-red-700 rounded text-md mt-3 bounce-bottom" onclick="openLink('home')">Go Back</button>
+      <p class="text-xs text-center text-gray-500 mt-3">Please use low size files for uploading. Thank you ☺️</p>
+    </div></div>
+    <?php } ?>
              <div></div>
     	</div>
     </body>
