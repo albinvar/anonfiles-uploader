@@ -37,7 +37,7 @@
       </div>
       
       <button name ="submit" class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-md mt-6 bounce-bottom">Upload</button>
-      <p class="text-xs text-center text-gray-500 mt-3">Please use simple text for conversation to prevent lagging. Thank you ☺️</p>
+      <p class="text-xs text-center text-gray-500 mt-3">Please use low size files for uploading. Thank you ☺️</p>
     </div></div>
     </form>
              <div></div>

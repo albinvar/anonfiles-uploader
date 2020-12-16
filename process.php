@@ -109,7 +109,7 @@ switch ($errorCode) {
         <input type="text" id="link" placeholder="Here is your link" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-3" value="<?= $result->data->file->url->full ?>" readonly>
       </div>
       
-      <button name ="submit" class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-md mt-3 bounce-bottom">Copy to clipboard</button>
+      <button name ="submit" class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-md mt-3 bounce-bottom" onclick="copyLink()">Copy to clipboard</button>
       <p class="text-xs text-center text-gray-500 mt-3">Please use low size files for uploading. Thank you ☺️</p>
     </div></div>
     <?php } else { ?>
