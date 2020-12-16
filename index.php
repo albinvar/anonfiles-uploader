@@ -28,7 +28,7 @@
     <div >
     	<img class="flip-in-hor-bottom flex flex-wrap content-center mx-auto" src="https://i.ibb.co/3cgk37y/ic-launcher.png" width="180" alt="ic-launcher">
     </div>
-<form action="result.php" enctype="multipart/form-data" method="post">
+<form action="process.php" enctype="multipart/form-data" method="post">
  <div class="bg-gray-900 border-4 border-purple-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
       <h2 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white">AnonFile Uploader</h2>
       <div class="relative mb-4">
