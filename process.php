@@ -12,7 +12,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 $uploader = new Uploader($token);
 $result = $uploader->decodeJson();
-$status = ($result->status == 1 ) ? "Success" : "Error Encountered";
+if ($result->status == 1)
+{
+$status = ($result->status == 1 ) ? "<b class='text-green-400'> Success</b>" : "<b class='text-red-600 font-lg'> Error</b>";
+$filename = $result->data->file->metadata->name;
+$filesize = $result->data->file->metadata->size->readable;
+} elseif($result->status == 0) {
+
+}
 
 ?>
 <!DOCTYPE html>
@@ -40,20 +47,22 @@ $status = ($result->status == 1 ) ? "Success" : "Error Encountered";
      </button></a>
   </div>
 </div>
+
 	     <div class="px-8 py-12">
     	     <div> 
     <div >
     <!--<img class="flip-in-hor-bottom flex flex-wrap content-center mx-auto" src="https://i.ibb.co/3cgk37y/ic-launcher.png" width="180" alt="ic-launcher">-->
     </div>
  <div class="bg-gray-900 border-4 border-purple-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-      <h2 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white"><?= $status ?></h2>
+      <h1 class="text-center text-lg font-medium title-font mb-5 tracking-in-expand text-white"><?= $status ?></h1>
       <div class="relative mb-4">
+        <p class="text-white text-center mb-2">Your file <strong><?= $filename ?> (<?= $filesize ?>)</strong> was uploaded successfully 🤗</p>
         <label for="file" class="leading-7 text-sm text-gray-600">Here is your link</label>
-        <input type="text" id="link" placeholder="Here is your link" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-3" value="<?= $result->data->file->url->full ?>" required>
+        <input type="text" id="link" placeholder="Here is your link" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-3" value="<?= $result->data->file->url->full ?>" readonly>
       </div>
       
-      <button name ="submit" class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-md mt-6 bounce-bottom">Upload</button>
-      <p class="text-xs text-center text-gray-500 mt-3">Please use simple text for conversation to prevent lagging. Thank you ☺️</p>
+      <button name ="submit" class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-md mt-3 bounce-bottom">Copy to clipboard</button>
+      <p class="text-xs text-center text-gray-500 mt-3">Please use low size files for uploading. Thank you ☺️</p>
     </div></div>
     
              <div></div>
