@@ -8,6 +8,10 @@ use App\Uploader;
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
+if (empty($_FILES['file'])){
+	echo "The file field should not be empty";
+	die;
+	}
 
 $uploader = new Uploader($token);
 $result = $uploader->decodeJson();
