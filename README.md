@@ -36,7 +36,7 @@ Anon Files Uploader is a php file uploader which runs using Anonfiles API.
 
 ## Demo
 
-Live Demo : http://test.com
+Live Demo : <a href="https://anonfiles-uploader.herokuapp.com" target="_blank">Anonfile Uploader</a>
 
 ## Installation
 
