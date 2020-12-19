@@ -73,7 +73,7 @@ switch ($errorCode) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
     <meta name="og:title" property="og:title" content="Anon File Uploader">
     <meta name="description" content="Simple PHP file uploader using Anon Files Api">
