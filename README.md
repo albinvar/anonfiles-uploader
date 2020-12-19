@@ -10,9 +10,11 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Contributions](#contributions)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
@@ -24,6 +26,13 @@ Anon Files Uploader is a php file uploader which runs using Anonfiles API.
 - Easy to Deploy using heroku deploy button
 - Show Error messages according to the Error code from API
 - Optional API key provided along with heroku deploy
+
+## Screenshots
+
+|Default Interface|After Uploading|
+|--|--|
+|![desktop](https://i.ibb.co/8XPTDC8/IMG-20201219-090522.jpg)|![desktop](https://i.ibb.co/K96qn1j/IMG-20201219-090943.jpg)|
+
 
 ## Demo
 
@@ -59,3 +68,12 @@ $token = "YOUR_ANONFILES_API_TOKEN_HERE"
 
 * Open your [http://localhost:8080](http://localhost:8080) to load the web interface.
 
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+The project is certified using [MIT License](LICENSE)
