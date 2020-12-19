@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<img src="http://heroku-badge.herokuapp.com/?app=anonfiles-uploader&style=flat&svg=1" />
+<a href="https://anonfiles-uploader.herokuapp.com"><img src="http://heroku-badge.herokuapp.com/?app=anonfiles-uploader&style=flat&svg=1" /></a>
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 ## Introduction
 
-Anon Files Uploader is a php file uploader which runs using Anonfiles API. 
+Anon Files Uploader is a simple php file uploader which runs using Anonfiles API. 
 
 ## Features
 
