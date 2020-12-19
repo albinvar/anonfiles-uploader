@@ -79,6 +79,13 @@ switch ($errorCode) {
     <meta name="description" content="Simple PHP file uploader using Anon Files Api">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="/site.webmanifest">
+    <!--deprecated color-->
+    <style>
+	.bg-teal-500 { background-color: #38b2ac; }
+    .bg-teal-700 { background-color: #2c7a7b; }
+    .border-teal-500 { border-color: #38b2ac; }
+    .border-teal-700 { border-color: #2c7a7b; }
+	</style>
     <script src="script.js"></script>
     </head>
     <body class="bg-gray-900">

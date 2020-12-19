@@ -4,12 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
     <meta name="og:title" property="og:title" content="Anon File Uploader">
     <meta name="description" content="Simple PHP file uploader using Anon Files Api">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="/site.webmanifest">
+    <!--deprecated color-->
+    <style>
+	.bg-teal-500 { background-color: #38b2ac; }
+    .bg-teal-700 { background-color: #2c7a7b; }
+    .border-teal-500 { border-color: #38b2ac; }
+    .border-teal-700 { border-color: #2c7a7b; }
+	</style>
     </head>
     <body class="bg-gray-900">
     	<div class="w-full max-w">
