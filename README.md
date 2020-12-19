@@ -5,6 +5,7 @@
   </a>
 </p>
 
+<img src="http://heroku-badge.herokuapp.com/?app=anonfiles-uploader&style=flat&svg=1" />
 
 ## Table of Contents
 
