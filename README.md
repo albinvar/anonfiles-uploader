@@ -5,14 +5,11 @@
   </a>
 </p>
 
-<a href="https://anonfiles-uploader.herokuapp.com"><img src="http://heroku-badge.herokuapp.com/?app=anonfiles-uploader&style=flat&svg=1" /></a>
-
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -34,16 +31,7 @@ Anon Files Uploader is a simple php file uploader which runs using Anonfiles API
 |--|--|
 |![desktop](https://i.ibb.co/8XPTDC8/IMG-20201219-090522.jpg)|![desktop](https://i.ibb.co/K96qn1j/IMG-20201219-090943.jpg)|
 
-
-## Demo
-
-Live Demo : <a href="https://anonfiles-uploader.herokuapp.com" target="_blank">Anonfile Uploader</a>
-
 ## Installation
-
-### Easy way (recommended)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### Setup on VPS/local machine
 
@@ -64,6 +52,7 @@ require __DIR__.'/vendor/autoload.php';
 use App\Uploader;
 
 $token = "YOUR_ANONFILES_API_TOKEN_HERE"
+//Replace the default token.
 ```
 * Start localhost using <br>```php -S localhost:8080```
 
