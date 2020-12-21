@@ -29,7 +29,7 @@ Anon Files Uploader is a simple php file uploader which runs using Anonfiles API
 
 |Default Interface|After Uploading|
 |--|--|
-|![desktop](https://i.ibb.co/8XPTDC8/IMG-20201219-090522.jpg)|![desktop](https://i.ibb.co/K96qn1j/IMG-20201219-090943.jpg)|
+|![desktop](https://i.ibb.co/8XPTDC8/IMG-20201219-090522.jpg)|![desktop](https://i.ibb.co/0JRv33B/IMG-20201221-234325.jpg)|
 
 ## Installation
 
