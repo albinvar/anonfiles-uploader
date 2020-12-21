@@ -16,7 +16,7 @@
 
 ## Introduction
 
-Anon Files Uploader is a simple php file uploader which runs using Anonfiles API. 
+Anon Files Uploader is a simple php file uploader which runs using Anonfiles API.
 
 ## Features
 
@@ -54,9 +54,11 @@ use App\Uploader;
 $token = "YOUR_ANONFILES_API_TOKEN_HERE"
 //Replace the default token.
 ```
-* Start localhost using <br>```php -S localhost:8080```
+* Start localhost using <br>```php server``` 
 
-* Open your [http://localhost:8080](http://localhost:8080) to load the web interface.
+* Open your [http://127.0.0.1:8888](http://127.0.0.1:8888) to load the web interface.
+
+* Guess what, All Done 🤗
 
 ## Contributing
 
