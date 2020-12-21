@@ -1,0 +1,20 @@
+#!/usr/bin/php -q
+<?php
+
+$host = "127.0.0.1";
+$port = "8888";
+
+echo shell_exec("clear");
+echo PHP_EOL;
+
+echo "    ___                         _______ __             __  __      __                __         " . PHP_EOL;
+echo "   /   |  ____  ____  ____     / ____(_) /__  _____   / / / /___  / /___  ____ _____/ /__  _____" . PHP_EOL;
+echo "  / /| | / __ \/ __ \/ __ \   / /_  / / / _ \/ ___/  / / / / __ \/ / __ \/ __ `/ __  / _ \/ ___/" . PHP_EOL;
+echo " / ___ |/ / / / /_/ / / / /  / __/ / / /  __(__  )  / /_/ / /_/ / / /_/ / /_/ / /_/ /  __/ /    " . PHP_EOL;
+echo "/_/  |_/_/ /_/\____/_/ /_/  /_/   /_/_/\___/____/   \____/ .___/_/\____/\__,_/\__,_/\___/_/     " . PHP_EOL;
+echo "                                                        /_/                                     " . PHP_EOL;
+echo PHP_EOL;
+echo PHP_EOL;
+echo "\033[31m anonfiles-cli \033[0m Version 1.0 \n";
+echo PHP_EOL;
+echo shell_exec("php -S {$host}:{$port} & xdg-open http://{$host}:{$port}");
